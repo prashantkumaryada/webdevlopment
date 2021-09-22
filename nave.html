@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .heading > h1{
+      text-align: right;
+    }
+    .leftnav, li{
+      list-style-type: none;
+      float: left;
+     }
+      .rightnav, li{
+      list-style-type: none;
+        float: right; 
+      }
+      .b{
+        hight: 4px;
+        width: 5%;
+        padding: 4px;
+        margin: 9px;
+      }
+      
+  </style>
+</head>
+<body>
+<div class="containerfluid" style="padding-right: 0px; padding-left: 0px;">
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex;justify-content: space-between;">
+  
+   <!-- Links -->
+   <ul class="leftnav">
+   <ul class="navbar-nav">
+      <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+      </li>
+    </ul>
+  </ul>
+    <ul class="rightnav">
+      <!-- <ul class="navbar-nav"> -->
+     <li class="nav-item">
+       <a class="nav-link" href="#">About us</a>
+     </li>
+     <!-- Dropdown -->
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+         Agarbati Brand 
+       </a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="#">Rajnigandha</a>
+         <a class="dropdown-item" href="#">Kewda</a>
+         <a class="dropdown-item" href="#">Gulab</a>
+       </div>
+       <li class="nav-item">
+       <a class="nav-link" data-toggle="modal"data-target="#myModal" href="#">login</a>
+     </li>
+     </li>
+   </ul>
+ </ul>
+ </nav>
+</div>
+
+
+
+
+<!--Login Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height: 350px; width: 281px;">
+        <div class="modal-form">
+          <button type="button" class="submit" data-submit="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <form action="backend.php" style="height=40px; ">
+            <div class="form-group">
+             <div class="col">
+               <div class="hide-md-lg">
+                <h1>Sign in</h1>
+                </div> 
+                <div class="b">
+                 <input type="text" name="username" placeholder="Username"style="margin: 9px;" required><br>
+                 <input type="password" name="password" placeholder="Password"  style="margin:9px"required><br>
+                 <button type="submit" class="btn btn-primary" value="Login"style="margin:9px;">login</button>
+               </div>
+       </div>
+              
+            </div>
+             <a class="link" data-toggle="modal"data-target="#myModal1" style="margin:54px;" href="#">Creat new account?</a>
+             <div class="modal-footer">
+              <button style="text-align: left;"type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Rigstration Modal -->
+
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+       <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <div class="modal-form"style="width: 89%; margin:30px; margin-bottom: 1rem;">
+           <form>
+              <div class="form-group">
+               <label for="First name">First name:</label>
+               <input type="First name" class="form-control" placeholder="Enter First Name" id="First name">
+              </div>
+              <div>
+                <label for="Last name">Last name:</label>
+                <input type="Last name" class="form-control" placeholder="Enter Last Name" id="last Name">
+              </div>
+              <div>
+                <label for="Phone no">phone no.</label>
+                <input type="Phone no" class="form-control" placeholder="Enter Your phone No." id="Phone no.">
+              </div>
+              <div>
+                <label for="">Email:</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="Email">
+              </div>
+              <div>
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" placeholder="Enter Password" id="pwd">
+              </div>
+               <div>
+                <label for="pwd"> Conform Password:</label>
+                <input type="Conform password" class="form-control" placeholder="Enter Conform Password" id="pwd">
+              </div>
+              <div class="modal-footer">
+                <button type="Login" class="btn btn-primary" data-submit="modal">Submit</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<div>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\hp\Desktop\Image\agarbati.jpeg.jpg" alt="Los Angeles" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\hp\Desktop\Image\agarbati2.jpeg.jpg" alt="Chicago" width="1300" height="500">
+    </div>
+   
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
+</html>
